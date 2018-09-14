@@ -1,36 +1,8 @@
-function createProjectsTable(jsonPath,elementId) {
-  
-  var html = '';
-
-  $.getJSON(jsonPath, function(data) {
-    $.each(data, function(key, proj){
-      html += '<tr>' +
-                '<td class="proj-title"><a href="/projects/' + proj.id + '">' + proj.title + '</a></td>' +
-                '<td class="proj-theme">' + proj.theme + '</td>' +
-                '<td class="proj-country">' + proj.country + '</td>' +
-                '<td class="proj-donate">';
-                if (proj.money_url || proj.equipment_text || proj.service_text) {
-                  
-                    if (proj.money_url) { html += '<i title="Money" class="fa fa-donate"></i>'; }
-                    if (proj.equipment_text) { html += '<i title="Equipment" class="fa fa-gift"></i>'; }
-                    if (proj.service_text) { html += '<i title="Skills" class="fa fa-user-circle"></i>'; }
-                 }   
-                 html += '</td>';
-      html += '</tr>';          
-    });
-  
-    elementId = "#" + elementId;
-    $( elementId ).html(html);
-  });
-}
-
-
-
 function addProjectThumbs(jsonPath, title, headline, elementId){
 
 $.getJSON(jsonPath, function(data) {
     
-    //filter the data tu see only the entries marked for inclusion in the homepage
+    //filter the data to see only the entries marked for inclusion in the homepage
     var homepageData = data.filter(function (entry) {
       return entry.on_homepage === 1;
     });
