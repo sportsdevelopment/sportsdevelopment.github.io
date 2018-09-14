@@ -905,3 +905,32 @@ td.proj-donate i {
 #mergeRow-gdpr {margin-top: 20px;}
 #mergeRow-gdpr fieldset label {font-weight: normal;}
 #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+.tgt-modal .modal-content #mc_embed_signup p {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.tgt-modal .modal-content #mc_embed_signup p.subscribe-label {
+    font-weight: 700;
+    width: 100%;
+}
+
+.tgt-modal .modal-content #mc_embed_signup ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.tgt-modal .modal-content #mc_embed_signup .checkbox {
+    display: block;
+    text-align: left;
+}
+
+input.cta-button {
+    background-color: var(--col1);
+    color: #fff;
+    font-weight: 700;
+    margin: 2rem;
+    padding: 1rem;
+}
