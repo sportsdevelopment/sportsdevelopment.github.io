@@ -53,7 +53,7 @@ $.getJSON(jsonPath, function(data) {
 
       
 function addTeam(jsonPath, title, headline, elementId, message){
-$.getJSON("/team.json", function(data) {
+$.getJSON(jsonPath, function(data) {
 	//create section header
 	var html = '<div class="container">' +
 				'<div class="row">' +
