@@ -111,10 +111,10 @@ $.getJSON(jsonPath, function(data) {
     $(elementId).html(html);
 });
 
+}
+
+
 function randomString(){
  var outString = (Math.random() + 1).toString(36).substring(7);
  return outString;
 }
-
-}
-
