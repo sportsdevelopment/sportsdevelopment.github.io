@@ -126,7 +126,7 @@
 <script>
 
 $( document ).ready(function() {
-  var jsonPath = 'projects/projects.json';
+  var jsonPath = 'projects/projects.json?v=' + randomString();
   var html = '';
 
   $.getJSON(jsonPath, function(data) {
