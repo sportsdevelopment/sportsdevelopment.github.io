@@ -23,7 +23,7 @@ $.getJSON(jsonPath, function(data) {
 			html += '</div><div class="row">';	
 		}
 		html += '<div class="col-md-4 col-sm-12 project-item">' +
-				  '<a class="project-link" href="/projects/' + proj.id + '">' +
+				  '<a class="project-link" href="/projects/' + proj.url + '">' +
 				    '<div class="project-hover">' +
                       '<div class="project-hover-content">' +
 					    '<i class="fa fa-plus fa-3x"></i>' +
