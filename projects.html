@@ -117,12 +117,12 @@
 $( document ).ready(function() {
   var jsonPath = 'projects/projects.json?v=' + randomString();
   var html = '';
-
+  var filterThemeHTMLString = '[all]';
+  var filterThemeHTML = '<option>All</option>';
+  var filterCountryHTMLString = '[all]';
+  var filterCountryHTML = '<option>All</option>';
+    
   $.getJSON(jsonPath, function(data) {
-    var filterThemeHTMLString = '[all]';
-    var filterThemeHTML = '<option>All</option>';
-    var filterCountryHTMLString = '[all]';
-    var filterCountryHTML = '<option>All</option>';
     
     $.each(data, function(key, item){
       if (item.is_published == '1') {
