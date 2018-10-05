@@ -134,9 +134,9 @@ $( document ).ready(function() {
         html += '<td class="item-country">' + item.country + '</td>';
         html += '<td class="item-donate">';                 
           if (item.money_url || item.equipment_text || item.service_text) {
-            if (item.money_url) { html += '<i title="Donate money" class="fa fa-donate"></i>'; }
-            if (item.equipment_text) { html += '<i title="Give equipment" class="fa fa-gift"></i>'; }
-            if (item.service_text) { html += '<i title="Get involved" class="fa fa-user-circle"></i>'; }
+            if (item.money_url) { html += '<i title="Donate money" class="fa fa-donate"></i><label class="sr-only">Donate</label>'; }
+            if (item.equipment_text) { html += '<i title="Give equipment" class="fa fa-gift"></i><label class="sr-only">Give equipment</label>'; }
+            if (item.service_text) { html += '<i title="Get involved" class="fa fa-user-circle"></i><label class="sr-only">Get involved</label>'; }
           }   
         html += '</td>';  
       
@@ -174,7 +174,7 @@ $( document ).ready(function() {
 $('select').on('change', function() {
   var value = this.value.toLowerCase();
   if(value == 'all'){
-    $(this).show();
+    $("#projects tr").show();
   } else {
     $("#projects tr").filter(function() {
       $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 )
