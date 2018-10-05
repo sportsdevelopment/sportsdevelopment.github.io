@@ -144,15 +144,15 @@ $( document ).ready(function() {
         
         var testThemeArray = item.theme.split(',');
         for (var iT =0; iT< testThemeArray.length; iT++){
-          var testTheme = '[' + testThemeArray[iT].toLower().trim() + ']';
+          var testTheme = '[' + testThemeArray[iT].toLowerCase().trim() + ']';
           if(filterThemeHTMLString.indexOf(testTheme) > -1){
             filterThemeHTMLString += testTheme;
             filterThemeHTML += '<option>' + testThemeArray[iT] + '</option>';
           }
         }  
         var testCountryArray = item.country.split(',');
-        for (var iT =0; iT< testCountryArray.length; iT++){
-          var testCountry = '[' + testCountryArray[iT].toLower().trim() + ']';
+        for (var iC =0; iC< testCountryArray.length; iC++){
+          var testCountry = '[' + testCountryArray[iC].toLowerCase().trim() + ']';
           if(filterCountryHTMLString.indexOf(testCountry) > -1){
             filterCountryHTMLString += testCountry;
             filterCountryHTML += '<option>' + testCountryArray[iT] + '</option>';
@@ -180,7 +180,8 @@ $('select').on('change', function() {
       $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 )
     });
   }  
-})
+});
+
 </script>
     <!-- Modal 1 -->
     <div class="tgt-modal modal fade" id="askModal" tabindex="-1" role="dialog" aria-hidden="true">
