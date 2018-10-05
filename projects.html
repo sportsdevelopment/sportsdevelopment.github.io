@@ -74,10 +74,6 @@
              <div class="form-group">
                <label for="sel1">Filter by theme</label>
                <select class="form-control" id="sel1">
-                 <option>Equity and inclusion</option>
-                 <option>Social good</option>
-                 <option>Sport development</option>
-                 <option>Youth support</option>
                </select>
              </div>
            </div>
@@ -85,7 +81,7 @@
            <div class="col-sm-4">
              <div class="form-group">
                <label for="sel1">Filter by location</label>
-               <select class="form-control" id="sel1">
+               <select class="form-control" id="sel2">
                </select>
              </div>
            </div>
@@ -93,7 +89,11 @@
            <div class="col-sm-4">
              <div class="form-group">
                <label for="sel2">Filter by type of support</label>
-               <select class="form-control" id="sel2">
+               <select class="form-control" id="sel3">
+                 <option>All</option>
+                 <option>Donate</option>
+                 <option>Give</option>
+                 <option>Get involved</option>
                </select>
              </div>
            </div>
@@ -134,9 +134,9 @@ $( document ).ready(function() {
         html += '<td class="item-country">' + item.country + '</td>';
         html += '<td class="item-donate">';                 
           if (item.money_url || item.equipment_text || item.service_text) {
-            if (item.money_url) { html += '<i title="Money" class="fa fa-donate"></i>'; }
-            if (item.equipment_text) { html += '<i title="Equipment" class="fa fa-gift"></i>'; }
-            if (item.service_text) { html += '<i title="Skills" class="fa fa-user-circle"></i>'; }
+            if (item.money_url) { html += '<i title="Donate money" class="fa fa-donate"></i>'; }
+            if (item.equipment_text) { html += '<i title="Give equipment" class="fa fa-gift"></i>'; }
+            if (item.service_text) { html += '<i title="Get involved" class="fa fa-user-circle"></i>'; }
           }   
         html += '</td>';  
       
