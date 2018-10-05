@@ -145,7 +145,7 @@ $( document ).ready(function() {
         var testThemeArray = item.theme.split(',');
         for (var iT =0; iT< testThemeArray.length; iT++){
           var testTheme = '[' + testThemeArray[iT].trim().toLowerCase() + ']';
-          if(filterThemeHTMLString.indexOf(testTheme) > -1){
+          if(filterThemeHTMLString.indexOf(testTheme) == -1){
             filterThemeHTMLString += testTheme;
             filterThemeHTML += '<option>' + testThemeArray[iT].trim() + '</option>';
           }
@@ -153,7 +153,7 @@ $( document ).ready(function() {
         var testCountryArray = item.country.split(',');
         for (var iC =0; iC< testCountryArray.length; iC++){
           var testCountry = '[' + testCountryArray[iC].trim().toLowerCase() + ']';
-          if(filterCountryHTMLString.indexOf(testCountry) > -1){
+          if(filterCountryHTMLString.indexOf(testCountry) == -1){
             filterCountryHTMLString += testCountry;
             filterCountryHTML += '<option>' + testCountryArray[iC].trim() + '</option>';
           }
@@ -163,8 +163,8 @@ $( document ).ready(function() {
     });
     
 
-    $('#sel1').html(filterThemeHTMLString);
-    $('#sel2').html(filterCountryHTMLString);
+    $('#sel1').html(filterThemeHTML);
+    $('#sel2').html(filterCountryHTML);
     $('#projects').html(html);
   });
   
