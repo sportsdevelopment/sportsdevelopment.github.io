@@ -155,6 +155,13 @@ h6 {
     margin-bottom: 1rem;
 }
 
+.project-page h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--col2);
+}
+
+
 body .btn {
     font-weight: 700;
 }
