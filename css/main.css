@@ -910,15 +910,11 @@ td.proj-donate i {
 	color: var(--col6);
 }
 
-<*
-.carousel-item{
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 */
-    position: relative;
+.project-page .carousel {
+    margin-top: 3rem;
 }
-*>
 
-.carousel-item img{
+.project-page .carousel-item img{
     width: 100%;
 }
 
