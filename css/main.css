@@ -32,7 +32,6 @@ body {
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.55rem;
 }
-}
 
 h1,
 h2,
@@ -161,6 +160,11 @@ h6 {
     border-bottom: 1px solid var(--col2);
 }
 
+.project-page p{
+    line-height: 1.5rem;
+    min-height: 0.7rem;
+    margin-bottom: 0.25rem;
+}
 
 body .btn {
     font-weight: 700;
