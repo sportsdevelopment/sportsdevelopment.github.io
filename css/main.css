@@ -26,7 +26,7 @@
 
 
 
-/* font families */
+/* font families and typography */
 
 body {
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -60,7 +60,112 @@ header.masthead .intro-text .intro-lead-in,
 }
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.utility-page h1 {
+    border-bottom: 3px solid var(--col1);
+    padding: 1em 0 0.25em;
+    margin-bottom: 1em;
+}
+
+.utility-page h2 {
+    margin-top: 3rem;
+}
+
+.utility-page hr {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.project-page h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--col2);
+}
+
+.project-page h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-page p {
+    line-height: 1.5rem;
+    min-height: 0.7rem;
+    margin-bottom: 0.25rem;
+}
+
+body .btn {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.75;
+}
+
+body .text-primary {
+    color: var(--col1) !important;
+}
+body a:hover .text-primary {
+    color: var(--col1h) !important;
+}
+
+blockquote.blockquote {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+.blockquote p {
+    padding: 2rem;
+    border-left: 1rem solid var(--col1);
+    width: auto;
+    display: inline-block;
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.blockquote p:before,
+.blockquote p:after{
+    position: absolute;
+    font-size: 3rem;
+    color: var(--col1);
+}
+.blockquote p:before{
+    content: '\201C';
+    top: -1rem;
+    left: 1rem;
+}
+.blockquote p:after{
+    content: '\201D';
+    bottom: -2rem;
+    right: 1rem;
+}
+
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  line-height: 1.5rem;
+}
+
+
+
 /* Links */
+
 body a {
     color: var(--col1);
     position: relative;
@@ -119,99 +224,18 @@ body a.no-effect:hover:before {
 }
 
 
-/* other */
 
+
+/* other */
 
 body {
     overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-}
-
-.utility-page h1 {
-    border-bottom: 3px solid var(--col1);
-    padding: 1em 0 0.25em;
-    margin-bottom: 1em;
 }
 
 .utility-page #mainNav {
     background-color: var(--col3);
 }
 
-.utility-page h2 {
-    margin-top: 3rem;
-}
-
-.utility-page hr {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
-.project-page h2 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--col2);
-}
-
-.project-page p{
-    line-height: 1.5rem;
-    min-height: 0.7rem;
-    margin-bottom: 0.25rem;
-}
-
-body .btn {
-    font-weight: 700;
-}
-
-p {
-    line-height: 1.75;
-}
-
-
-body .text-primary {
-    color: var(--col1) !important;
-}
-body a:hover .text-primary {
-    color: var(--col1h) !important;
-}
-
-blockquote.blockquote {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: -50px;
-}
-.blockquote p {
-    padding: 2rem;
-    border-left: 1rem solid var(--col1);
-    width: auto;
-    display: inline-block;
-    max-width: 70%;
-    margin: 0 auto;
-    position: relative;
-}
-.blockquote p:before,
-.blockquote p:after{
-    position: absolute;
-    font-size: 3rem;
-    color: var(--col1);
-}
-.blockquote p:before{
-    content: '\201C';
-    top: -1rem;
-    left: 1rem;
-}
-.blockquote p:after{
-    content: '\201D';
-    bottom: -2rem;
-    right: 1rem;
-}
 
 
 
@@ -240,20 +264,6 @@ section {
     padding: 100px 0;
 }
 
-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-section h3.section-subheading {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  text-transform: none;
-  line-height: 1.5rem;
-}
 
 @media (min-width: 768px) {
   section {
@@ -900,14 +910,18 @@ td.proj-donate i {
 	color: var(--col6);
 }
 
+<*
 .carousel-item{
     height: 0;
     padding-bottom: 56.25%; /* 16:9 */
     position: relative;
 }
+*>
+
 .carousel-item img{
     width: 100%;
 }
+
 .carousel-item iframe{
     width: 560px;
     height: 315px;
